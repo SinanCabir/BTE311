@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<h2> HTML Form</h2>
+
+<form action="test1.html"></form>
+
+<fieldset>
+<legend>Kişisel Bilgileriniz</legend>
+<label for="isim"> Adınız: </label><br>
+<input type="text" id="isim" name="isim"> <br>
+<label for="soyisim"> Soyadınız: </label> <br>
+<input type="text" id="sisim" name="sisim"> <br>
+<label for="şifre"> Şifre:</label> <br>
+<input type="password" id="şifre" name="şifre"> <br>
+<label for="email"> E-mail:</label> <br>
+<input type="email" id="mail" name="mail"> <br>
+<label for="tel"> Telefon No:</label> <br>
+<input type="tel" id="tel" name="tel"> <br> <br>
+</fieldset>
+
+<fieldset>
+<legend>Yaşınız</legend>
+<label for="radio"> Yaş Aralığınızı Seçiniz</label> <br> 
+<input type="radio" id="0-18" name="yaş" value="0-18">
+<label for="0-18">0-18</label> <br>
+<input type="radio" id="18-25" name="yaş" value="18-25">
+<label for="18-25">18-25</label> <br>
+<input type="radio" id="25+" name="yaş" value="25+">
+<label for="25+">25+</label> <br> <br>
+</fieldset>
+
+<fieldset>
+<legend>Nitelikler</legend>
+<label for="checkbox"> Niteliklerinizi Belirleyin</label> <br>
+<input type="checkbox" id="HTML" name="nitelik" value="HTML">
+<label for="HTML">HTML</label> <br>
+<input type="checkbox" id="CSS" name="nitelik" value="CSS">
+<label for="CSS">CSS</label> <br>
+<input type="checkbox" id="SASS" name="nitelik" value="SASS">
+<label for="SASS">SASS</label> <br> <br>
+</fieldset>
+
+<fieldset>
+<legend>Kurs</legend>
+<label for="selectID"> Kurs Seçiniz</label> <br>
+<select name="language" id="selectID" size="3" multiple>
+<option value="html"> HTML </option>
+<option value="css"> CSS </option>
+<option value="sass"> SASS </option> </select> <br><br>
+
+<label for="date"> Tarih Belirleyin</label>
+<input type="date">
+</fieldset> <br> <br>
+
+<input type="submit" value="Gönder">
+<input type="reset" value="Sıfırla">
+
+</body>
+</html>
