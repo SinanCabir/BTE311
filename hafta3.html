@@ -1,60 +1,137 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders Programı ve Müzik</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        
+        figure {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        figcaption {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        audio {
+            outline: none;
+        }
+
+        
+        table {
+            width: 80%;
+            max-width: 600px;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+        }
+
+        caption {
+            font-size: 1.5em;
+            padding: 10px;
+            background-color: #ffc107;
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #ff7043;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        td {
+            background-color: #ffe0b2;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #ffcc80;
+        }
+
+        tr:hover td {
+            background-color: #ffd180;
+        }
+
+        
+        th:first-child {
+            background-color: #ffab40;
+        }
+
+    </style>
 </head>
 <body>
+
     <figure>
         <figcaption>Şarkıyı dinle</figcaption>
         <audio controls src="Shawty - Kabul Olan Tek Duamsın (Akustik).mp3">
-          <a href="Shawty - Kabul Olan Tek Duamsın (Akustik).mp3"> Download audio </a>
+            <a href="Shawty - Kabul Olan Tek Duamsın (Akustik).mp3">Download audio</a>
         </audio>
     </figure>     
-      
-    <table bgcolor = "yellow">
-        <caption>
-            Ders Programı
-        </caption>
-        <tr align center bgcolor = "orange">
-            <td > </td>
-            <th> Pazartesi </th> 
-            <th> Salı </th>
-            <th> Çarşamba </th>
-            <th> Perşembe </th>
-            <th> Cuma </th>
+
+    <table>
+        <caption>Ders Programı</caption>
+        <tr>
+            <td></td>
+            <th>Pazartesi</th>
+            <th>Salı</th>
+            <th>Çarşamba</th>
+            <th>Perşembe</th>
+            <th>Cuma</th>
         </tr>
-        <tr bgcolor="orange" > 
-            <th > 8.40-10.30</th>
-            <td> BTE307 </td>
-            <td> BTE313 </td>
-            <td> </td>
-            <td> GKS104 </td>
-            <td> BTE311 </td>
+        <tr>
+            <th>8.40-10.30</th>
+            <td>BTE307</td>
+            <td>BTE313</td>
+            <td>-</td>
+            <td>GKS104</td>
+            <td>BTE311</td>
         </tr>
-        <tr bgcolor="orange">
-            <th > 10.40-12.30</th>
-            <td> EGT303 </td>
-            <td> </td>
-            <td> GKS101 </td>
-            <td> </td>
-            <td> </td>
+        <tr>
+            <th>10.40-12.30</th>
+            <td>EGT303</td>
+            <td>-</td>
+            <td>GKS101</td>
+            <td>-</td>
+            <td>-</td>
         </tr>
-        <tr bgcolor="orange">
-            <th > 12.40-14.30 </th>
-            <td> BTE307 </td>
-            <td> </td>
-            <td> BTE322 </td>
-            <td> </td>
-            <td> EGT453 </td>
+        <tr>
+            <th>12.40-14.30</th>
+            <td>BTE307</td>
+            <td>-</td>
+            <td>BTE322</td>
+            <td>-</td>
+            <td>EGT453</td>
         </tr>
-        <tr bgcolor="orange"> 
-            <th > 14.40-16.30 </th>
-            <td> </td>
-            <td> BTE309 </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
+        <tr>
+            <th>14.40-16.30</th>
+            <td>-</td>
+            <td>BTE309</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
         </tr>
     </table>
+
 </body>
 </html>
