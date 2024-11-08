@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "A A A"
+                "B C D"
+                "E E F"
+                "G G G";
+            grid-gap: 10px;
+        }
+        .container > div {
+            padding: 20px;
+            color: white;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        .A { grid-area: A; background-color: #002366; }
+        .B { grid-area: B; background-color: #FFA500; }
+        .C { grid-area: C; background-color: #66CC66; }
+        .D { grid-area: D; background-color: #FF0000; }
+        .E { grid-area: E; background-color: #FFD700; }
+        .F { grid-area: F; background-color: #800080; }
+        .G { grid-area: G; background-color: #008000; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="A">A</div>
+        <div class="B">B</div>
+        <div class="C">C</div>
+        <div class="D">D</div>
+        <div class="E">E</div>
+        <div class="F">F</div>
+        <div class="G">G</div>
+    </div>
+</body>
+</html>
