@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animasyon</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(74, 146, 195);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; 
+        }
+        .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .up-down {
+            animation: upDown 2s ease-in-out infinite;
+        }
+
+        @keyframes upDown {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-50px); }
+        }
+
+        .grow-shrink {
+            animation: growShrink 3s ease-in-out infinite;
+        }
+
+        @keyframes growShrink {
+            0%, 100% {
+                transform: scale(1);
+                background-color: #3498db;
+            }
+            50% {
+                transform: scale(1.5);
+                background-color: #e74c3c;
+            }
+        }
+
+        .fade {
+            animation: fadeInOut 3s ease-in-out infinite;
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.2; }
+        }
+
+        .side-to-side {
+            animation: sideToSide 2s ease-in-out infinite;
+        }
+
+        @keyframes sideToSide {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(50px); }
+        }
+
+        .rotate {
+            animation: rotateAnimation 2s linear infinite;
+        }
+
+        @keyframes rotateAnimation {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box up-down"><img src="yüz11.png" alt="Yüz"></div>
+    <div class="box grow-shrink"><img src="yüz11.png" alt="Yüz"></div>
+    <div class="box fade"><img src="yüz11.png" alt="Yüz"></div>
+    <div class="box side-to-side"><img src="yüz11.png" alt="Yüz"></div> 
+    <div class="box rotate"><img src="yüz11.png" alt="Yüz"></div> 
+
+</body>
+</html>
