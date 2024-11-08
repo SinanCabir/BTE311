@@ -1,79 +1,174 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masal</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #9898b4;
+            color: #eee;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        
+        
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: #f9f9f9;
+            text-decoration: none;
+            font-size: 1.1em;
+            margin: 0 15px;
+            padding: 5px 10px;
+            transition: background 0.3s, color 0.3s;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+            color: #fff;
+        }
+
+        
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin-top: 80px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #ffdd57;
+            margin-bottom: 30px;
+        }
+
+        section {
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            color: #333;
+        }
+
+        #bolum1 {
+            background-color: #fefae0;
+        }
+
+        #bolum2 {
+            background-color: #e0f7fa;
+        }
+
+        #bolum3 {
+            background-color: #ffebee;
+        }
+
+        #bolum4 {
+            background-color: #e8f5e9;
+        }
+
+        
+        h3 {
+            font-size: 1.8em;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body> 
-    <h4>
-        <a href="#bolum1" > Bölüm1 için tıklayın</a> <br>
-        <a href="#bolum2" > Bölüm2 için tıklayınız</a> <br>
-        <a href="#bolum3" > Bölüm3 için tıklayınız </a> <br>
-        <a href="#bolum4" > Bölüm4 için tıklayınız</a>
-    </h4>
-    <img src="yıldız.jpg" height="200">
-    <h3>
-        <a id="#bolum1">
-        1. Bölüm: Dilek Yıldızı 
-    </h3>
 
-    <p> 
-        
-        Bir zamanlar, uzak diyarlarda, Yıldız Ülkesi adında parıltılı bir krallık varmış.<br>
-        Bu krallığın gökyüzü, gece gündüz yıldızlarla dolu olurmuş ve 
-        insanlar yıldız toplayarak dileklerini gerçekleştirirlermiş.<br>
-        İşte bu büyülü krallıkta, dört dostun macerası başlar…
-    </p>
-    <hr>
-    <h3>
-        <a id="#bolum2">
-        2. Bölüm: Ormanların Gizemi
-    </h3>
-
-
-    <p>
-        
-        Yıldız Dağı’na ulaşmak için dostlar önce Kara Orman’ı geçmek zorundaymış. <br>
-        Bu orman, pek çok sırrı ve tehlikeyi içinde barındırırmış. Ormanın derinliklerinde karşılarına dev bir örümcek çıkmış.<br>
-         Örümcek, ormanın muhafızıymış ve ancak bir bilmecesini çözebilirlerse geçmelerine izin vereceğini söylemiş. <br>
-        Örümcek, bilmecesini sormuş: "Gökyüzünde ışıldar, ama elinle tutamazsın. <br>
-        Nedir bu?" Ayça, kısa bir süre düşündükten sonra cevabı vermiş: "Yıldız!" Örümcek, <br>
-        cevabın doğru olduğunu kabul etmiş ve dostların yoluna devam etmesine izin vermiş.
-    </p>
-    <hr>
-    <h3>
-        <a id="#bolum3">
-        3. Bölüm: Rüzgarın Hediyelediği Yol
-    </h3>
-
-    <p>
-        Kara Orman'ı geçen ekip, Rüzgar Vadisi'ne varmış. Ancak vadinin sert rüzgarları ilerlemelerini neredeyse <br>
-        imkânsız hale getiriyormuş. Rüzgâr Perisi, burada dostlarına yardımcı olmak için gücünü kullanmış <br>
-        ve rüzgarları yatıştırmış. Ancak vadiyi geçerken bir seçim yapmaları gerekmiş: Kolay ama uzun olan yoldan mı, <br>
-        yoksa tehlikeli ama kısa olan yoldan mı geçeceklerdi? <br>
-        Kısa yol tehlikeli görünse de, arkadaşlıklarının ve birbirlerine olan güvenlerinin gücüyle bu yolu seçmişler. <br>
-         Birlikte zorlukları aşarak, Yıldız Dağı'nın eteklerine ulaşmayı başarmışlar.
-    </p>
-    <hr>
-    <img src="yıldız2.jpg" height="200">
-    <h3>
-        <a id="#bolum4">
-        4. Bölüm: Zirveye Yolculuk ve Dileğin Gerçekleşmesi
-    </h3>
-
-    <p>
-        Sonunda Yıldız Dağı’na ulaşmışlar, ama zirveye çıkmak düşündüklerinden daha zormuş. <br>
-        Yolu kayalıklar, sisler ve uçurumlar kaplamış. Tam umutsuzluğa kapıldıkları anda, Ayça <br>
-        avucundaki Işık'ı havaya bırakmış. Işık, gökyüzünde parlayarak yolu aydınlatmış. <br>
-        Arkadaşlarıyla birlikte zirveye çıkmayı başarmışlar. <br>
-        Zirveye vardıklarında, Ayça dileğini tutmuş: "Herkesin dileklerinin gerçek olduğu bir <br> 
-        dünya olsun." O anda gökyüzünden sayısız yıldız düşmüş ve herkesin yüreklerinde sakladığı <br>
-        dilekler bir bir gerçekleşmeye başlamış. <br> <br>
-
-        Ayça ve dostları, bu büyük maceradan sonra evlerine döndüklerinde, artık bir <br>
-        daha asla yalnız olmadıklarını ve yıldızların her zaman onların yanında olduğunu bilerek yaşamışlar. <br>
-        Ve böylece, Yıldız Ülkesi'nde herkes mutlu mesut yaşamaya devam etmiş. <br> <br>
-
-        SON.
-    </p>
     
+    <div class="navbar">
+        <a href="#bolum1">Bölüm 1</a>
+        <a href="#bolum2">Bölüm 2</a>
+        <a href="#bolum3">Bölüm 3</a>
+        <a href="#bolum4">Bölüm 4</a>
+    </div>
+
+    
+    <div class="container">
+        <h1>Masal: Yıldız Ülkesi Macerası</h1>
+
+        <section id="bolum1">
+            <h3>1. Bölüm: Dilek Yıldızı</h3>
+            <img src="yıldız.jpg" alt="Yıldız" height="200">
+            <p>Bir zamanlar, uzak diyarlarda, Yıldız Ülkesi adında parıltılı bir krallık varmış.<br>
+            Bu krallığın gökyüzü, gece gündüz yıldızlarla dolu olurmuş ve insanlar yıldız toplayarak dileklerini gerçekleştirirlermiş.<br>
+            İşte bu büyülü krallıkta, dört dostun macerası başlar…</p>
+        </section>
+
+        <section id="bolum2">
+            <h3>2. Bölüm: Ormanların Gizemi</h3>
+            <p>Yıldız Dağı’na ulaşmak için dostlar önce Kara Orman’ı geçmek zorundaymış. <br>
+            Bu orman, pek çok sırrı ve tehlikeyi içinde barındırırmış. Ormanın derinliklerinde karşılarına dev bir örümcek çıkmış.<br>
+            Örümcek, ormanın muhafızıymış ve ancak bir bilmecesini çözebilirlerse geçmelerine izin vereceğini söylemiş. <br>
+            Örümcek, bilmecesini sormuş: "Gökyüzünde ışıldar, ama elinle tutamazsın. Nedir bu?" Ayça, kısa bir süre düşündükten sonra cevabı vermiş: "Yıldız!"<br>
+            Örümcek, cevabın doğru olduğunu kabul etmiş ve dostların yoluna devam etmesine izin vermiş.</p>
+        </section>
+
+        <section id="bolum3">
+            <h3>3. Bölüm: Rüzgarın Hediyelediği Yol</h3>
+            <p>Kara Orman'ı geçen ekip, Rüzgar Vadisi'ne varmış. Ancak vadinin sert rüzgarları ilerlemelerini neredeyse <br>
+            imkânsız hale getiriyormuş. Rüzgâr Perisi, burada dostlarına yardımcı olmak için gücünü kullanmış <br>
+            ve rüzgarları yatıştırmış. Ancak vadiyi geçerken bir seçim yapmaları gerekmiş: Kolay ama uzun olan yoldan mı, <br>
+            yoksa tehlikeli ama kısa olan yoldan mı geçeceklerdi? <br>
+            Kısa yol tehlikeli görünse de, arkadaşlıklarının ve birbirlerine olan güvenlerinin gücüyle bu yolu seçmişler. <br>
+            Birlikte zorlukları aşarak, Yıldız Dağı'nın eteklerine ulaşmayı başarmışlar.</p>
+        </section>
+
+        <section id="bolum4">
+            <h3>4. Bölüm: Zirveye Yolculuk ve Dileğin Gerçekleşmesi</h3>
+            <img src="yıldız2.jpg" alt="Yıldız Dağı" height="200">
+            <p>Sonunda Yıldız Dağı’na ulaşmışlar, ama zirveye çıkmak düşündüklerinden daha zormuş. <br>
+            Yolu kayalıklar, sisler ve uçurumlar kaplamış. Tam umutsuzluğa kapıldıkları anda, Ayça <br>
+            avucundaki Işık'ı havaya bırakmış. Işık, gökyüzünde parlayarak yolu aydınlatmış. <br>
+            Arkadaşlarıyla birlikte zirveye çıkmayı başarmışlar.<br>
+            Zirveye vardıklarında, Ayça dileğini tutmuş: "Herkesin dileklerinin gerçek olduğu bir <br> 
+            dünya olsun." O anda gökyüzünden sayısız yıldız düşmüş ve herkesin yüreklerinde sakladığı <br>
+            dilekler bir bir gerçekleşmeye başlamış.</p>
+            <p><strong>SON.</strong></p>
+        </section>
+    </div>
 </body>
 </html>
