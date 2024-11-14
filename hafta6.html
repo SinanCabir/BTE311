@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Layout</title>
+    <title>Enhanced Grid Layout</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+        }
+
         .container {
             display: grid;
             grid-template-areas: 
@@ -12,14 +22,29 @@
                 "B C D"
                 "E E F"
                 "G G G";
-            grid-gap: 10px;
-        }
-        .container > div {
+            grid-gap: 15px;
+            max-width: 600px;
+            width: 90%;
+            margin: auto;
             padding: 20px;
+        }
+
+        .container > div {
+            padding: 30px;
             color: white;
             font-size: 1.5em;
             text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.2s, box-shadow 0.2s;
         }
+
+        .container > div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+        }
+
+        
         .A { grid-area: A; background-color: #002366; }
         .B { grid-area: B; background-color: #FFA500; }
         .C { grid-area: C; background-color: #66CC66; }
