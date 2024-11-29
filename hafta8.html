@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastgele Arka Plan ve Resim Yönetimi</title>
+    <style>
+        
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            text-align: center;
+        }
+        .hidden {
+            display: none;
+        }
+        img {
+            max-width: 300px;
+            margin: 10px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const backgrounds = [
+            'resim1.jpg',
+            'resim2.jpg',
+            'resim3.jpg',
+            'resim4.jpg',
+            'resim5.jpg',
+            'resim6.jpg',
+            'resim7.jpg',
+            'resim8.jpg',
+            'resim9.jpg',
+            'resim10.jpg'
+        ];
+
+        
+        document.body.style.backgroundImage = `url('${backgrounds[Math.floor(Math.random() * backgrounds.length)]}')`;
+
+        
+        function toggleImage(id) {
+            const img = document.getElementById(id);
+            if (img.classList.contains('hidden')) {
+                img.classList.remove('hidden');
+            } else {
+                img.classList.add('hidden');
+            }
+        }
+    </script>
+
+    <div class="container">
+        <button onclick="toggleImage('image1')">Resim 1 Göster/Gizle</button>
+        <button onclick="toggleImage('image2')">Resim 2 Göster/Gizle</button>
+        <button onclick="toggleImage('image3')">Resim 3 Göster/Gizle</button>
+
+        <div>
+            <img id="image1" src="resim1.jpg" alt="Resim 1">
+            <img id="image2" src="resim2.jpg" alt="Resim 2" class="hidden">
+            <img id="image3" src="resim3.jpg" alt="Resim 3" class="hidden">
+        </div>
+    </div>
+</body>
+</html>
