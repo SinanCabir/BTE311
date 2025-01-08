@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,9 +59,9 @@
 </head>
 <body>
   <div id="quiz-container">
-    <h1>HTML & CSS Quiz</h1>
+    <h1>HTML & CSS Sınavı</h1>
     <div id="questions"></div>
-    <button id="submit-btn">Submit</button>
+    <button id="submit-btn">Sonuçları Göster</button>
     <div id="result"></div>
   </div>
 
@@ -93,20 +93,20 @@
         });
 
         document.getElementById("submit-btn").addEventListener("click", () => {
-          let score = 0;
+          let skor = 0;
           quizData.quiz.forEach((item, index) => {
-            const selectedOption = document.querySelector(`input[name="question${index}"]:checked`);
-            if (selectedOption && selectedOption.value === item.answer) {
-              score++;
+            const secilenSecenek = document.querySelector(`input[name="question${index}"]:checked`);
+            if (secilenSecenek && secilenSecenek.value === item.answer) {
+              skor++;
             }
           });
 
-          const result = document.getElementById("result");
-          result.innerText = `You scored ${score} out of ${quizData.quiz.length}`;
+          const sonuc = document.getElementById("result");
+          sonuc.innerText = `Toplam ${quizData.quiz.length} sorudan ${skor} doğru yaptınız.`;
         });
       })
       .catch(error => {
-        console.error("Error loading the JSON file:", error);
+        console.error("JSON dosyası yüklenirken bir hata oluştu:", error);
       });
   </script>
 </body>
