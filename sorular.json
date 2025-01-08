@@ -1,0 +1,55 @@
+{
+    "quiz": [
+      {
+        "question": "HTML nedir?",
+        "options": [
+          "Bir programlama dili",
+          "Bir işaretleme dili",
+          "Bir veritabanı",
+          "Bir grafik tasarım yazılımı"
+        ],
+        "answer": "Bir işaretleme dili"
+      },
+      {
+        "question": "CSS hangi işlevi görür?",
+        "options": [
+          "Sayfanın içeriğini oluşturur",
+          "Sayfa stilini belirler",
+          "Veritabanını yönetir",
+          "Veri gönderir"
+        ],
+        "answer": "Sayfa stilini belirler"
+      },
+      {
+        "question": "HTML tag'leri hangi işaretle başlar?",
+        "options": [
+          "<>",
+          "./.",
+          "[ ]",
+          "{ }"
+        ],
+        "answer": "<>"
+      },
+      {
+        "question": "CSS ile hangi özellik değiştirilemez?",
+        "options": [
+          "Renk",
+          "Font boyutu",
+          "Sayfa başlığı",
+          "Arka plan rengi"
+        ],
+        "answer": "Sayfa başlığı"
+      },
+      {
+        "question": "CSS ile nasıl bir yazı rengi değiştirilir?",
+        "options": [
+          "color: red;",
+          "font: red;",
+          "text: red;",
+          "background-color: red;"
+        ],
+        "answer": "color: red;"
+      }
+    ]
+  }
+  
