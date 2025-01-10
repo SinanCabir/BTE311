@@ -27,23 +27,23 @@
         const canvas = document.getElementById('myCanvas');
         const ctx = canvas.getContext('2d');
 
-        const gridSize = 10; // 10x10 ızgara
-        const cellSize = canvas.width / gridSize; // Her hücrenin boyutu
-        const circleRadius = cellSize * 0.4; // Dairelerin yarıçapı (hücre boyutuna göre ayarlanır)
+        const gridSize = 10;
+        const cellSize = canvas.width / gridSize;
+        const circleRadius = cellSize * 0.4; 
 
         for (let row = 0; row < gridSize; row++) {
             for (let col = 0; col < gridSize; col++) {
-                // Rastgele renk oluştur
+            
                 const r = Math.floor(Math.random() * 256);
                 const g = Math.floor(Math.random() * 256);
                 const b = Math.floor(Math.random() * 256);
                 const color = `rgb(${r}, ${g}, ${b})`;
 
-                // Dairenin merkezi
+               
                 const x = col * cellSize + cellSize / 2;
                 const y = row * cellSize + cellSize / 2;
 
-                // Daireyi çiz
+             
                 ctx.beginPath();
                 ctx.arc(x, y, circleRadius, 0, Math.PI * 2);
                 ctx.fillStyle = color;
